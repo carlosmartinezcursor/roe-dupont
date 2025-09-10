@@ -58,6 +58,7 @@ Este proyecto implementa una aplicación interactiva para el análisis financier
    - Patrimonio Promedio
 
 4. **Observar resultados**: Los ratios se calculan automáticamente y se muestran en tiempo real.
+5. **Explorar visualización 3D**: El prisma tridimensional se actualiza dinámicamente con los cambios.
 
 ## 📊 Modelo DuPont
 
@@ -79,6 +80,7 @@ ROE = Margen Neto × Rotación de Activos × Apalancamiento Financiero
 roe-dupont/
 ├── app.py                    # Aplicación principal de Streamlit
 ├── calculadora_ratios.py     # Módulo de cálculo de ratios
+├── visualizacion_3d.py       # Módulo de visualización 3D del prisma
 ├── requirements.txt          # Dependencias del proyecto
 ├── README.md                # Este archivo
 └── documentos/
@@ -95,13 +97,20 @@ roe-dupont/
 - [x] Cálculo automático de Apalancamiento Financiero
 - [x] Cálculo del ROE
 - [x] Visualización de resultados en métricas
-- [x] Tabla de descomposición del cálculo
-- [x] Gráfico de barras de componentes
-- [x] Interpretación automática de indicadores
+
+### ✅ Funcionalidad 2: Visualización 3D del Prisma ROE
+
+- [x] Prisma tridimensional interactivo
+- [x] Representación visual de los tres componentes DuPont
+- [x] Actualización dinámica con cambios en variables
+- [x] Ejes de colores para cada componente
+- [x] Etiquetas explicativas y anotaciones
+- [x] Punto ROE que muestra la combinación exacta
+- [x] Interpretación pedagógica del modelo
+- [x] Guía de interpretación expandible
 
 ### 🚧 Próximas Funcionalidades
 
-- [ ] Funcionalidad 2: Visualización 3D del Prisma ROE
 - [ ] Funcionalidad 3: Estados Financieros Simplificados
 
 ## 📈 Interpretación de Resultados
@@ -126,6 +135,32 @@ roe-dupont/
 - **10-15%**: Buena rentabilidad
 - **5-10%**: Rentabilidad moderada
 - **< 5%**: Baja rentabilidad
+
+## 🎯 Visualización 3D del Prisma ROE
+
+La **Funcionalidad 2** introduce una visualización tridimensional que representa gráficamente la descomposición del ROE:
+
+### Características del Prisma 3D:
+
+- **🔵 Eje X (Margen Neto)**: Ancho del prisma representa la eficiencia en generación de utilidades
+- **🟠 Eje Y (Rotación de Activos)**: Profundidad del prisma representa la eficiencia en uso de activos  
+- **🟢 Eje Z (Apalancamiento Financiero)**: Altura del prisma representa el uso de deuda
+- **🔴 Punto ROE**: Muestra la combinación exacta de los tres factores
+- **📦 Volumen**: Es proporcional al ROE total calculado
+
+### Interpretación Visual:
+
+- **Prisma equilibrado**: Los tres componentes contribuyen de manera balanceada
+- **Prisma alargado**: Un componente domina sobre los otros
+- **Prisma pequeño**: Todos los componentes son bajos
+- **Prisma grande**: Todos los componentes son altos
+
+### Funcionalidades Interactivas:
+
+- **Actualización dinámica**: El prisma se modifica en tiempo real al cambiar las variables
+- **Etiquetas explicativas**: Anotaciones que muestran los valores exactos
+- **Ejes de colores**: Cada componente tiene su color distintivo
+- **Guía de interpretación**: Sección expandible con consejos pedagógicos
 
 ## 🤝 Contribución
 

@@ -11,6 +11,7 @@ from calculadora_ratios import (
     crear_interfaz_sliders_sidebar, 
     mostrar_resultados
 )
+from visualizacion_3d import mostrar_visualizacion_3d
 
 # Configuración de la página
 st.set_page_config(
@@ -49,6 +50,12 @@ def main():
     
     # Mostrar resultados
     mostrar_resultados(calculadora)
+    
+    # Separador visual
+    st.markdown("---")
+    
+    # Mostrar visualización 3D del prisma ROE
+    mostrar_visualizacion_3d(calculadora)
 
 
 if __name__ == "__main__":
