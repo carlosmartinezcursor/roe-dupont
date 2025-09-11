@@ -81,6 +81,7 @@ roe-dupont/
 ├── app.py                    # Aplicación principal de Streamlit
 ├── calculadora_ratios.py     # Módulo de cálculo de ratios
 ├── visualizacion_3d.py       # Módulo de visualización 3D del prisma
+├── estados_financieros.py    # Módulo de estados financieros simplificados
 ├── requirements.txt          # Dependencias del proyecto
 ├── README.md                # Este archivo
 └── documentos/
@@ -109,9 +110,15 @@ roe-dupont/
 - [x] Interpretación pedagógica del modelo
 - [x] Guía de interpretación expandible
 
-### 🚧 Próximas Funcionalidades
+### ✅ Funcionalidad 3: Estados Financieros Simplificados
 
-- [ ] Funcionalidad 3: Estados Financieros Simplificados
+- [x] Estado de Resultados simplificado con gráfico de barras horizontal
+- [x] Balance General simplificado con gráfico apilado
+- [x] Cálculo dinámico de gastos (Ventas - Utilidad Neta)
+- [x] Cálculo dinámico de deuda (Activos - Patrimonio)
+- [x] Visualizaciones con colores específicos para cada elemento
+- [x] Coherencia contable entre inputs y resultados
+- [x] Actualización dinámica con cambios en variables
 
 ## 📈 Interpretación de Resultados
 
@@ -161,6 +168,28 @@ La **Funcionalidad 2** introduce una visualización tridimensional que represent
 - **Etiquetas explicativas**: Anotaciones que muestran los valores exactos
 - **Ejes de colores**: Cada componente tiene su color distintivo
 - **Guía de interpretación**: Sección expandible con consejos pedagógicos
+
+## 📊 Estados Financieros Simplificados
+
+La **Funcionalidad 3** complementa el análisis con un contexto contable básico:
+
+### Estado de Resultados:
+- **📈 Gráfico de barras horizontal** con tres elementos:
+  - 🔵 **Ventas** (celeste): Ingresos totales
+  - 🌸 **Gastos** (rosado): Costos operativos (calculados como Ventas - Utilidad Neta)
+  - 🟢 **Utilidad Neta** (verde suave): Beneficio final
+
+### Balance General:
+- **⚖️ Gráfico apilado** que muestra la estructura financiera:
+  - 🟢 **Activos** (verde): Recursos de la empresa
+  - 🌸 **Deuda** (rosado): Obligaciones con terceros (calculada como Activos - Patrimonio)
+  - 🔵 **Patrimonio** (celeste): Capital propio
+
+### Características:
+- **Cálculos dinámicos**: Los valores se actualizan automáticamente con los inputs
+- **Coherencia contable**: Ventas = Gastos + Utilidad Neta; Activos = Deuda + Patrimonio
+- **Visualización clara**: Dos columnas con gráficos interactivos
+- **Colores consistentes**: Esquema de colores coherente en toda la aplicación
 
 ## 🤝 Contribución
 

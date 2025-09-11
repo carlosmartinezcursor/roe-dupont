@@ -12,6 +12,7 @@ from calculadora_ratios import (
     mostrar_resultados
 )
 from visualizacion_3d import mostrar_visualizacion_3d
+from estados_financieros import mostrar_estados_financieros
 
 # Configuración de la página
 st.set_page_config(
@@ -56,6 +57,12 @@ def main():
     
     # Mostrar visualización 3D del prisma ROE
     mostrar_visualizacion_3d(calculadora)
+    
+    # Separador visual
+    st.markdown("---")
+    
+    # Mostrar estados financieros simplificados
+    mostrar_estados_financieros(calculadora)
 
 
 if __name__ == "__main__":
